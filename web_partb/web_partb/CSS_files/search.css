@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+.card-search{
+  display:flex;
+  flex-wrap:wrap;
+	margin: 0 auto;
+	padding: 1.875em 1.875em;
+	background-color:gainsboro;
+  border-radius: 0.625em;
+	box-shadow: 0 0 3.125em rgba(0,0,0,0.9);
+	width: 55%;
+  background: padding-box;
+  background-padding: 1.875em 1.875em;
+  justify-content:center;
+  align-items:center;
+  gap: 1.2em;
+  min-width:40em;
+}
+
+#imgSeek {
+  width: 28.125em;
+  height: 15.625em;
+}
+
+.carousel-control-next{
+  position:relative;
+  bottom:18.625em;
+  left:8em;
+  padding: 0em;
+  border:none;
+}
+
+.carousel-control-prev{
+  position:relative;
+  bottom:18.625em;
+  right: 8em;
+  padding: 0em;
+  border:none;
+}
+
+.carousel-control-next:hover,.carousel-control-prev:hover,.btn:hover {
+  transform: scale(1.1);
+}
+
+#prev, #next {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
