@@ -1,0 +1,54 @@
+.my-form{
+  padding: 1.25em 10.125em;
+  margin: 0em;
+  color: white;
+}
+
+.my-form input{
+  padding: 0.5em;
+  width: 30vw;
+  border-radius: 0.625em;
+}
+
+.my-form input[type="submit"]{
+  font-size: 1.7em;
+  width: 8.5em;
+  border-radius: 1.25em;
+  border: 0.125em solid #cccccc;
+  text-align: center;
+  font-weight: bold;
+  background: transparent;
+  color: #b3d4fc;
+  cursor: pointer;
+}
+
+.my-form input[type="submit"]:hover{
+  color: blue;
+}
+
+.card{
+  display:flex;
+  flex-wrap:wrap;
+	margin: 0 auto;
+	padding: 1.875em 1.875em;
+	background-color:gainsboro;
+  border-radius: 0.625em;
+	box-shadow: 0 0 3.125em rgba(0,0,0,0.9);
+	width: 50%;
+  background: padding-box;
+  background-padding:  1.875em 1.875em;
+  justify-content:center;
+  align-items:center;
+  gap: 1.875em;
+}
+
+.login{
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+}
+
+.my-form input:focus{
+  border-color:lightblue;
+  border-width:0.5em;
+}

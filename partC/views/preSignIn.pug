@@ -1,0 +1,13 @@
+extends default
+
+block head 
+    link(rel='stylesheet' href='preSignIn.css')
+    
+block content
+  .preSign
+    h1 registration
+    p Select the service you would like to receive
+    button.Employee(type='button')
+      a(href='signInEmployee')  looking for a job
+    button.Service(type='button')
+      a(href='signIn')  looking for a housekeeper

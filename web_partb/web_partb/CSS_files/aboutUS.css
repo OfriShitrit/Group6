@@ -1,0 +1,22 @@
+
+.aboutUs{
+   display:flex;
+   flex-wrap:wrap;
+   margin: 0 auto;
+   padding: 1.875em 1.875em;
+   background-color:gainsboro;
+   border-radius: 0.625em;
+   box-shadow: 0 0 3.125em rgba(0,0,0,0.9);
+   width: 80%;
+   text-align: center;
+   background: padding-box;
+   background-padding:  1.875em 1.875em;
+   justify-content:center;
+   align-items:center;
+   gap: 1.875em;
+}
+
+.aboutUs p{
+    font-size:0.9375em;
+}
+

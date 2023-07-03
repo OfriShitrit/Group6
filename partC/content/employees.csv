@@ -1,0 +1,4 @@
+name,lastName,email,userName,password,city,gender,phone,Seniority,HourlyRate
+ana,montana,ana@post.co.il,anosh2,12345678,be'er sheva,female,0528793300,3,100
+yoni,moshe,yonyon@kan.com,yonyon10,12345678,be'er sheva,male,0537891100,5,70
+ron,zion,ro@gmail.com,roni184,12345678,be'er sheva,male,0509909981,10,110

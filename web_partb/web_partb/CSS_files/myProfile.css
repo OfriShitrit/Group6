@@ -1,0 +1,29 @@
+
+h3 {
+  font-size: 2em;
+  color: steelblue;
+  margin-top:2.75em;
+}
+
+.myProfile{
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+}
+
+.card{
+  display:flex;
+  flex-wrap:wrap;
+	margin: 0 auto;
+	padding: 1.875em 1.875em;
+	background-color:gainsboro;
+  border-radius: 0.625em;
+	box-shadow: 0 0 3.125em rgba(0,0,0,0.9);
+	width: 50%;
+  background: padding-box;
+  background-padding:  1.875em 1.875em;
+  justify-content:center;
+  align-items:center;
+  gap: 0.625em;
+  min-width:20em;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../CSS_files/style.css">
+    <link rel="stylesheet" href="../CSS_files/signIn.css">
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+  </head>
+
+  <body>
+    <div class="banner">
+      <div class="flex">
+        <img src="../img/logo.jpg" alt="logo" id="logo">
+        <div id="sidebar">
+          <ul>
+            <li><a href="login.html">log in</a></li>
+            <li><a href="preSignIn.html">Sign in</a></li>
+            <li><a href="customerService.html">Customer Service</a></li>
+            <li><a href="aboutUs.html">About us</a></li>
+            <li><a href="myProfile.html"> My Profile</a></li>
+            <li><a href="homePage.html"> <img src="../img/home.png" alt="HomePage"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="signIn">
+          <h1>Sign In </h1>
+        </div>
+        <form action="" class="my-form" >
+            <label>Name: </label><br><br>
+              <input type="text" name="First-Name" id="name" placeholder="First name...">
+              <div id="nameError" class="error"></div>
+              <br>
+              <br>
+              <label>Last Name: </label><br><br>
+              <input type="text" name="Last-Name" id="last_name" placeholder="Last name...">
+              <br>
+              <br>
+              <label>Email: </label><br><br>
+              <input type="email" name="Email"  id="email" placeholder="Email...">
+              <br>
+              <br>
+              <label>User Name: </label> <br><br>
+              <input type="text" name="User-Name" id="user_name" placeholder="User name...">
+              <br>
+              <br>
+              <label>Password: </label><br><br>
+              <input type="password" name="Password" id="password" placeholder="**********">
+              <br>
+              <br>
+              <label>Address: </label><br><br>
+                <input type="text" name="City" id="city" placeholder="City...">
+              <br>
+              <br>
+              <label>Gender: </label><br><br>
+              <select name="gender" class ="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+              <br>
+              <br>
+              <label>Phone: </label><br><br>
+              <label>
+                <input type="tel" name="phone" id= "phone" placeholder="Phone...">
+              </label>
+              <br>
+              <br>
+              <div class="signIn">
+                <input type="submit" class="submit" value="Sign in now!" >
+              </div>
+          </form>
+
+        </main>
+      </div>
+    </div>
+
+  <script src="../JS_files/formValid.js"></script>
+
+  </body>
+</html>
