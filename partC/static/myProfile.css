@@ -1,0 +1,28 @@
+h3 {
+    font-size: 2em;
+    color: steelblue;
+    margin-top: 2.75em;
+    margin-bottom: 0.5em;
+}
+
+.myProfile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#details {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#details div {
+    display: grid;
+    grid-template-columns: 100px 200px;
+}
+
+#details div input {
+    color: black;
+}

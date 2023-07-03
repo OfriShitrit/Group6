@@ -1,0 +1,49 @@
+extends default
+
+block head 
+    link(rel='stylesheet' href='customerService.css')
+    script(defer='' src="customerService.js")
+
+block content
+    .service
+      h2 Leave some details and we will call you back!
+      p
+        | Or.. you can contact us by email: SimpleClean@gmail.com
+    form.my-form(action='' method='post')
+      | Name: 
+      br
+      br
+      input(type='text' id="name" name='First-Name' placeholder='First name...')
+      br
+      br
+      |                     Last Name:
+      br
+      br
+      input(type='text' id="last_name" name='Last-Name' placeholder='Last name...')
+      br
+      br
+      label Contact Type: 
+      br
+      br
+      select.text(name='text' id="text")
+        option(value='Payments') Payments
+        option(value='Technical Problems')
+          | Technical Problems
+        option(value='Report') Report
+        option(value='Other') Other
+      br
+      br
+      |                     Phone Number:
+      br
+      br
+      input(type='tel' name='Phone' id="phone" placeholder='Phone number...')
+      br
+      br
+      |                     Description:
+      br
+      br
+      textarea(name='report' id="report" placeholder='A detailed description will help us solve the problem...' rows="7")
+      br
+      br
+      .service
+        input(type='submit' name='' value='send')
