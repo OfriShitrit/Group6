@@ -1,0 +1,99 @@
+3.1 modules:mySQL, express, bodyParser, nodemon, fs, path.
+3.2 drop path: "/drop"
+3.3
+
+const CreateUsers = (req, res) => {
+    const Q1 = `
+        CREATE TABLE IF NOT EXISTS web.Users(
+            name VARCHAR(50) NOT NULL, 
+            lastName VARCHAR(50) NOT NULL, 
+            email VARCHAR(150) NOT NULL, 
+            userName VARCHAR(50) NOT NULL, 
+            password VARCHAR(30) NOT NULL, 
+            city VARCHAR(50) NOT NULL, 
+            gender VARCHAR(10) NOT NULL, 
+            phone VARCHAR(50) NOT NULL, 
+            PRIMARY KEY (phone)
+        );`;
+    sql.query(Q1, (err, mysqlres) => {
+        if (err) {
+            console.log("error ", err);
+            // res.status(400).send({message: "error in creating table"});
+            return;
+        }
+        console.log("created table users");
+        // res.send("table created");
+        return;
+    });
+};
+
+const CreateEmployees = () => {
+    const Q5 = `
+        CREATE TABLE IF NOT EXISTS web.Employees(
+            name VARCHAR(50) NOT NULL, 
+            lastName VARCHAR(50) NOT NULL, 
+            email VARCHAR(150) NOT NULL, 
+            userName VARCHAR(50) NOT NULL, 
+            password VARCHAR(30) NOT NULL, 
+            city VARCHAR(50) NOT NULL, 
+            gender VARCHAR(10) NOT NULL, 
+            phone VARCHAR(50) NOT NULL, 
+            Seniority INT, 
+            HourlyRate INT, 
+            PRIMARY KEY (phone)
+        );`;
+    sql.query(Q5, (err, mysqlres) => {
+        if (err) {
+            console.log("error ", err);
+            // res.status(400).send({message: "error in creating table"});
+            return;
+        }
+        console.log("created table Employees");
+        // res.send("table created");
+        return;
+    });
+};
+
+
+const CreateCustomerService = () => {
+    const Q9 = `
+    CREATE TABLE IF NOT EXISTS web.customerService(
+        name VARCHAR(50) NOT NULL, 
+        lastName VARCHAR(50) NOT NULL, 
+        contactType VARCHAR(50) NOT NULL, 
+        phone VARCHAR(50) NOT NULL, 
+        report TEXT, 
+        PRIMARY KEY (phone)
+    );`;
+    sql.query(Q9, (err, mysqlres) => {
+        if (err) {
+            console.log("error ", err);
+            // res.status(400).send({message: "error in creating table"});
+            return;
+        }
+        console.log("created table customerservice");
+        // res.send("table created");
+        return;
+    });
+};
+
+
+
+const CreateSearches = () => {
+    const Q13 = `
+    CREATE TABLE IF NOT EXISTS web.Searches(
+        userPhone VARCHAR(50), 
+        employeePhone VARCHAR(50), 
+        PRIMARY KEY (userPhone, employeePhone)
+    );`;
+    sql.query(Q13, (err, mysqlres) => {
+        if (err) {
+            console.log("error ", err);
+            // res.status(400).send({message: "error in creating table"});
+            return;
+        }
+        console.log("created table searches");
+        // res.send("table created");
+        return;
+    });
+};   

@@ -1,0 +1,62 @@
+.content {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.875em;
+}
+
+.homePage {
+    gap: 2.875em;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+}
+
+.search {
+    font-size: 1em;
+}
+
+.report {
+    position: fixed;
+    bottom: 3.125em;
+    left: 3.125em;
+    border-style: dotted;
+}
+
+.search:hover,
+.report:hover {
+    transform: scale(1.1);
+}
+
+.report {
+    /*animation*/
+    opacity: 0;
+    animation-name: report;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes report {
+    /*animation*/
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*@media (max-width: 660px){
+  .search{
+     font-size: 1.5em;
+     margin:7.875em 31.25em;
+  }
+}*/

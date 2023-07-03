@@ -1,0 +1,10 @@
+.login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.my-form input:focus {
+    border-color: lightblue;
+    border-width: 0.5em;
+}

@@ -1,0 +1,28 @@
+extends default
+
+block head 
+    link(rel='stylesheet' href='login.css')
+    script(defer='' src='login.js')
+    
+block content
+    .login
+      h1 Log in
+    form.my-form(action='' method='post')
+      | Name:
+      br
+      br
+      input(type='text' id="username" name='UserName' placeholder='')
+      br
+      br
+      |           Password:
+      br
+      br
+      input(type='password' id="password" name='Password' placeholder='**********')
+      br
+      br
+      .login
+        input.log(type='submit' value='Log in now!')
+        br
+        br
+        button.signIn(type='button')
+          a(href='preSignIn') New here? sign in now!
