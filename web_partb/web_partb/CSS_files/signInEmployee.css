@@ -1,0 +1,76 @@
+.my-form{
+  padding: 1.25em 10.125em;
+  margin: 0em;
+  color: white;
+}
+
+.my-form input{
+  padding: 0.5em;
+  width: 30vw;
+  border-radius: 0.625em;
+
+}
+
+.my-form input[type="submit"]{
+  font-size: 1.7em;
+  width: 10.5em;
+  padding:0.9375em 0;
+  border-radius: 1.25em;
+  border: 0.125em solid #cccccc;
+  text-align: center;
+  font-weight: bold;
+  background: transparent;
+  color: #b3d4fc;
+  cursor: pointer;
+  justify-content:center;
+}
+
+.my-form input[type="submit"]:hover{
+  color: blue;
+}
+
+.card{
+  display:flex;
+  flex-wrap:wrap;
+	margin: 0 auto;
+	padding: 1.875em 1.875em;
+	background-color:gainsboro;
+  border-radius: 0.625em;
+	box-shadow: 0 0 3.125em rgba(0,0,0,0.9);
+	width: 55%;
+  background: padding-box;
+  background-padding:  1.875em 1.875em;
+  justify-content:center;
+  align-items:center;
+  gap: 1.875em;
+  min-width:23em;
+}
+
+.signInEmp{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+}
+
+.gender{
+  background-color:white ;
+  color:#2f3640;
+  border-radius: 0.625em;
+  padding:0.3em 0.3em;
+  cursor:pointer;
+}
+
+.gender option{
+  background-color:grey;
+  color:white;
+}
+
+.my-form input:focus{
+  border-color:lightblue;
+  border-width:0.5em;
+}
+.gender:focus{
+  border-color:lightblue;
+  border-width:0.3em;
+}
